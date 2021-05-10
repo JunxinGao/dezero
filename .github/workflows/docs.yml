@@ -23,7 +23,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Create docs
       run: |
-          cp -r docs_src docs
           pip install -Uq nbdev fastcore
           pip install -Uq -e .[dev]
           nbdev_build_docs
